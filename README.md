@@ -45,3 +45,5 @@ An array is a collection of elements identified by their index.
   <li>Access = O(1)</li>
   <li>Search,Insert, and Delete = O(n)</li>
 </ul>
+
+<img src="https://github.com/omarchouman/Data-Structures/blob/main/Array.png?raw=true">
