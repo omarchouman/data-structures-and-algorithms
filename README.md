@@ -15,12 +15,12 @@
 
 Big-O is the worst case scenario of the code which means the high time complexity the code gets executed in.
 
-<h4>Big-O Cases From Best To Worst</h4>
+<h2>Big-O Cases From Best To Worst</h2>
 <ul>
   <li>O(1) (Best Case)</li>
   <li>O(logn)</li>
   <li>O(n)</li>
-  <li>O(n**2)</li>
-  <li>O(2**n)</li>
+  <li>O(n squared)</li>
+  <li>O(2 squared of n)</li>
   <li>O(n!) (Worst Case)</li>
 </ul>
