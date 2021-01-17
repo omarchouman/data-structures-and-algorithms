@@ -24,3 +24,5 @@ Big-O is the worst case scenario of the code which means the high time complexit
   <li>O(2n) (Exponential)</li>
   <li>O(n!) (Worst Case)</li>
 </ul>
+
+<img src="https://github.com/omarchouman/Data-Structures/blob/main/Big-O.jpeg?raw=true">
