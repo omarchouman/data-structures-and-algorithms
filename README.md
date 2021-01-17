@@ -12,3 +12,4 @@
 </ul>
 
 <h3>Big-O Notation</h3>
+Big-O is the worst case scenario of the code which means the high time complexity the code gets executed in.
