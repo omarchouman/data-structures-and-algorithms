@@ -11,11 +11,11 @@
   <li> Hash Table Structure</li>
 </ul>
 
-<h3>Big-O Notation</h3>
+<h2>Big-O Notation</h2>
 
 Big-O is the worst case scenario of the code which means the high time complexity the code gets executed in.
 
-<h2>Big-O Cases From Best To Worst</h2>
+<h3>Big-O Cases From Best To Worst</h3>
 <ul>
   <li>O(1) (Best Case)</li>
   <li>O(logn)</li>
