@@ -2,9 +2,11 @@
 <p>This repository is made for data structures notes</p>
 
 <h4>We Will Be Covering 7 Different Data Structures For Now</h4>
-* Array Structure:  (Fixed Size)
-* Dynamic Array Structure: (Double Size)
-* Linked List Data Structure
-* Stack Data Structure
-* Queue Data Structure
-* Hash Table Structure
+<ul>
+  <li> Array Structure:  (Fixed Size) </li>
+  <li> Dynamic Array Structure: (Double Size)</li>
+  <li>Linked List Data Structure</li>
+  <li>Stack Data Structure</li>
+  <li> Queue Data Structure</li>
+  <li> Hash Table Structure</li>
+</ul>
