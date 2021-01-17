@@ -17,10 +17,10 @@ Big-O is the worst case scenario of the code which means the high time complexit
 
 <h3>Big-O Cases From Best To Worst</h3>
 <ul>
-  <li>O(1) (Best Case)</li>
-  <li>O(logn)</li>
-  <li>O(n)</li>
-  <li>O(n squared)</li>
-  <li>O(2 squared of n)</li>
+  <li>O(logn) (Logarithmic)</li>
+  <li>O(1)</li>
+  <li>O(n) (Linear)</li>
+  <li>O(n squared) (Quadratic)</li>
+  <li>O(2n) (Exponential)</li>
   <li>O(n!) (Worst Case)</li>
 </ul>
