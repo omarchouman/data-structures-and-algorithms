@@ -47,3 +47,11 @@ An array is a collection of elements identified by their index.
 </ul>
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Array.png?raw=true">
+
+<h2>Dynamic Array Structure (Double Size)</h2>
+
+A dynamic array doubles the size of your normal array to allow you to add new items to it.
+
+<h2>Linked List Data Structure</h2>
+
+Linked List is basically when you have a bunch of connected nodes where each node takes a value and then takes the address of the next node.
