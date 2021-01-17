@@ -1,7 +1,7 @@
 <h1>Data Structures</h1>
 <p>This repository is made for data structures notes</p>
 
-<h4>We Will Be Covering 7 Different Data Structures For Now</h4>
+<h4 style="font-size:36px;">We Will Be Covering 7 Different Data Structures For Now</h4>
 <ul>
   <li> Array Structure:  (Fixed Size) </li>
   <li> Dynamic Array Structure: (Double Size)</li>
