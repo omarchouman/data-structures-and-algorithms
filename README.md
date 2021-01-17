@@ -34,3 +34,14 @@ Big-O is the worst case scenario of the code which means the high time complexit
   <li>Loop, SubRoutine, Function     (n Step)</li>
   <li>To Access Memory  (2 Steps)</li>
 </ul>
+
+
+<h2>Array Structure (Fixed Size)</h2>
+
+An array is a collection of elements identified by their index.
+
+<h3>Time Complexity of An Array:</h3>
+<ul>
+  <li>Access = O(1)</li>
+  <li>Search,Insert, and Delete = O(n)</li>
+</ul>
