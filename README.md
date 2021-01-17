@@ -21,7 +21,7 @@ Big-O is the worst case scenario of the code which means the high time complexit
   <li>O(1)</li>
   <li>O(n) (Linear)</li>
   <li>O(n squared) (Quadratic)</li>
-  <li>O(2n) (Exponential)</li>
+  <li>O(2 squared of n) (Exponential)</li>
   <li>O(n!) (Worst Case)</li>
 </ul>
 
