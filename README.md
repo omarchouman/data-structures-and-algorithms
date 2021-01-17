@@ -26,3 +26,11 @@ Big-O is the worst case scenario of the code which means the high time complexit
 </ul>
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Big-O.jpeg?raw=true">
+
+
+<h3>Big-O Rules</h3>
+<ul>
+  <li>+, -, /,  x, if       (1 Step)        (Constant)</li>
+  <li>Loop, SubRoutine, Function     (n Step)</li>
+  <li>To Access Memory  (2 Steps)</li>
+</ul>
