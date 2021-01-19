@@ -74,3 +74,5 @@ Stack is a linear data structure that follows FILO (First In Last Out) mechanism
   <li>Pop: removes an item from the stack   (top – 1)</li>
   <li>Peek or Top: returns top element stack</li>
 </ul>
+
+<img src="https://github.com/omarchouman/Data-Structures/blob/main/Stack.png">
