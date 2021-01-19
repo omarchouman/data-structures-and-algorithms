@@ -57,4 +57,4 @@ A dynamic array doubles the size of your normal array to allow you to add new it
 Linked List is basically when you have a bunch of connected nodes where each node takes a value and then takes the address of the next node.
 
 <h4>Double Linked List:</h4>
-<p>Previous Address    Value    Next Address</p>
+Previous Address    Value    Next Address
