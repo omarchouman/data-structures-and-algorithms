@@ -60,3 +60,5 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 <p>Previous Address</p>      <p>Value</p>      <p>Next Address</p>
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Single%20Linked%20List.png">
+
+<img src="https://github.com/omarchouman/Data-Structures/blob/main/Double%20Linked%20List.png">
