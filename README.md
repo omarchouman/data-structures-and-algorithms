@@ -87,4 +87,7 @@ Queue is a listing data structure that follows FIFO ( First In First Out).
   <li>Rear : First Element in a Queue</li>
   <li>Front : Next or Last Element in a Queue</li>
 </ul>
+
 Queue starts from Rear and ends at Front
+
+<img src="https://github.com/omarchouman/Data-Structures/blob/main/Queue.png">
