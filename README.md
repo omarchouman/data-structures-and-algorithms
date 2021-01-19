@@ -91,3 +91,10 @@ Queue is a listing data structure that follows FIFO ( First In First Out).
 Queue starts from Rear and ends at Front
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Queue.png">
+
+
+<h2>Hash Table Data Structure</h2>
+
+In a hash table, data is stored in an array format, where each data value has its own unique index value.
+
+<h4>Hash Table Easiest Algorithm:  item % size</h4>
