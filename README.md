@@ -76,3 +76,15 @@ Stack is a linear data structure that follows FILO (First In Last Out) mechanism
 </ul>
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Stack.png">
+
+
+<h2>Queue Data Structure</h2>
+
+Queue is a listing data structure that follows FIFO ( First In First Out).
+
+2 basic operations are performed in queue:
+<ul>
+  <li>Rear : First Element in a Queue</li>
+  <li>Front : Next or Last Element in a Queue</li>
+</ul>
+Queue starts from Rear and ends at Front
