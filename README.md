@@ -62,3 +62,15 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Single%20Linked%20List.png">
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Double%20Linked%20List.png">
+
+
+<h2>Stack Data Structure</h2>
+
+Stack is a linear data structure that follows FILO (First In Last Out) mechanism.
+
+3 basic operations are performed in a stack:
+<ul>
+  <li>Push: Adds an item to the stack      (top + 1)</li>
+  <li>Pop: removes an item from the stack   (top – 1)</li>
+  <li>Peek or Top: returns top element stack</li>
+</ul>
