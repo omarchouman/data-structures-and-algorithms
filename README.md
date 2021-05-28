@@ -1,14 +1,33 @@
 <h1>Data Structures</h1>
-<p>This repository is made for data structures notes</p>
+<p>This Repository is Made For Anyone Who Wants To Learn About : Big-O Notation, Data Structures, and Algorithms</p>
+
+<h4>We Will Be Disussing Big-O Notation</h4>
+<hr>
+<ul>
+  <li>What is Big-O ?</li>
+  <li>Big-O Cases From Best To Worst</li>
+  <li>Big-O Basic Rules</li>
+</ul
 
 <h4>We Will Be Covering 7 Different Data Structures For Now</h4>
+<hr>
+
 <ul>
-  <li> Array Structure:  (Fixed Size) </li>
-  <li> Dynamic Array Structure: (Double Size)</li>
+  <li>Array Structure:  (Fixed Size) </li>
+  <li>Dynamic Array Structure: (Double Size)</li>
   <li>Linked List Data Structure</li>
   <li>Stack Data Structure</li>
-  <li> Queue Data Structure</li>
-  <li> Hash Table Structure</li>
+  <li>Queue Data Structure</li>
+  <li>Hash Table Structure</li>
+</ul>
+
+<h4>We Will Be Discussing Some Of The Famous Algorithms Like:</h4>
+<hr>
+<ul>
+  <li>Sorting Algorithms: QuickSort, BubbleSort, and MergeSort</li>
+  <li>Searching Algorithms: Linear Search, and Binary Search</li>
+  <li>Breadth First Search (BFS)</li>
+  <li>Depth First Search (DFS)</li>
 </ul>
 
 <h2>Big-O Notation</h2>
