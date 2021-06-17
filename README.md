@@ -4,21 +4,21 @@
 <h4>We Will Be Disussing Big-O Notation</h4>
 <hr>
 <ul>
-  <li>What is Big-O ?</li>
-  <li>Big-O Cases From Best To Worst</li>
-  <li>Big-O Basic Rules</li>
+  <li><a href="#big-o">What is Big-O ?</a></li>
+  <li><a href="#big-o-cases">Big-O Cases From Best To Worst</a></li>
+  <li><a href="#big-o-rules">Big-O Basic Rules</a></li>
 </ul
 
 <h4>We Will Be Covering 7 Different Data Structures For Now</h4>
 <hr>
 
 <ul>
-  <li>Array Structure:  (Fixed Size) </li>
-  <li>Dynamic Array Structure: (Double Size)</li>
-  <li>Linked List Data Structure</li>
-  <li>Stack Data Structure</li>
-  <li>Queue Data Structure</li>
-  <li>Hash Table Structure</li>
+  <li><a href="#array-structure">Array Structure:  (Fixed Size)</a></li>
+  <li><a href="#dynamic-array-structure">Dynamic Array Structure: (Double Size)</a></li>
+  <li><a href="#linked-list">Linked List Data Structure</a></li>
+  <li><a href="#stack">Stack Data Structure</a></li>
+  <li><a href="#queue">Queue Data Structure</a></li>
+  <li><a href="#hash">Hash Table Structure</a></li>
 </ul>
 
 <h4>We Will Be Discussing Some Of The Famous Algorithms Like:</h4>
@@ -30,11 +30,11 @@
   <li>Depth First Search (DFS)</li>
 </ul>
 
-<h2>Big-O Notation</h2>
+<h2 id="big-o">Big-O Notation</h2>
 
 Big-O is the worst case scenario of the code which means the high time complexity the code gets executed in.
 
-<h3>Big-O Cases From Best To Worst</h3>
+<h3 id="big-o-cases">Big-O Cases From Best To Worst</h3>
 <ul>
   <li>O(logn) (Logarithmic)</li>
   <li>O(1)</li>
@@ -47,7 +47,7 @@ Big-O is the worst case scenario of the code which means the high time complexit
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Big-O.jpeg?raw=true">
 
 
-<h3>Big-O Rules</h3>
+<h3 id="big-o-rules">Big-O Rules</h3>
 <ul>
   <li>+, -, /,  x, if       (1 Step)        (Constant)</li>
   <li>Loop, SubRoutine, Function     (n Step)</li>
@@ -55,7 +55,7 @@ Big-O is the worst case scenario of the code which means the high time complexit
 </ul>
 
 
-<h2>Array Structure (Fixed Size)</h2>
+<h2 id="array-structure">Array Structure (Fixed Size)</h2>
 
 An array is a collection of elements identified by their index.
 
@@ -67,11 +67,11 @@ An array is a collection of elements identified by their index.
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Array.png?raw=true">
 
-<h2>Dynamic Array Structure (Double Size)</h2>
+<h2 id="dynamic-array-structure">Dynamic Array Structure (Double Size)</h2>
 
 A dynamic array doubles the size of your normal array to allow you to add new items to it.
 
-<h2>Linked List Data Structure</h2>
+<h2 id="linked-list">Linked List Data Structure</h2>
 
 Linked List is basically when you have a bunch of connected nodes where each node takes a value and then takes the address of the next node.
 
@@ -83,7 +83,7 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Double%20Linked%20List.png">
 
 
-<h2>Stack Data Structure</h2>
+<h2 id="stack">Stack Data Structure</h2>
 
 Stack is a linear data structure that follows FILO (First In Last Out) mechanism.
 
@@ -97,7 +97,7 @@ Stack is a linear data structure that follows FILO (First In Last Out) mechanism
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Stack.png">
 
 
-<h2>Queue Data Structure</h2>
+<h2 id="queue">Queue Data Structure</h2>
 
 Queue is a listing data structure that follows FIFO ( First In First Out).
 
@@ -112,7 +112,7 @@ Queue starts from Rear and ends at Front
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Queue.png">
 
 
-<h2>Hash Table Data Structure</h2>
+<h2 id="hash">Hash Table Data Structure</h2>
 
 In a hash table, data is stored in an array format, where each data value has its own unique index value. <br>
 
