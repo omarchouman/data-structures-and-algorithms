@@ -24,10 +24,10 @@
 <h4>We Will Be Discussing Some Of The Famous Algorithms Like</h4>
 <hr>
 <ul>
-  <li>Sorting Algorithms: QuickSort, BubbleSort, and MergeSort</li>
-  <li>Searching Algorithms: Linear Search, and Binary Search</li>
-  <li>Breadth First Search (BFS)</li>
-  <li>Depth First Search (DFS)</li>
+  <li>Sorting Algorithms: QuickSort, BubbleSort, and MergeSort (coming soon)</li> 
+  <li>Searching Algorithms: Linear Search, and Binary Search (coming soon)</li>
+  <li>Breadth First Search (BFS) (coming soon)</li>
+  <li>Depth First Search (DFS) (coming soon)</li>
 </ul>
 
 <h2 id="big-o">Big-O Notation</h2>
