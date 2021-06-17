@@ -21,7 +21,7 @@
   <li><a href="#hash">Hash Table Structure</a></li>
 </ul>
 
-<h4>We Will Be Discussing Some Of The Famous Algorithms Like:</h4>
+<h4>We Will Be Discussing Some Of The Famous Algorithms Like</h4>
 <hr>
 <ul>
   <li>Sorting Algorithms: QuickSort, BubbleSort, and MergeSort</li>
