@@ -1,4 +1,4 @@
-<h1>Data Structures</h1>
+<h1>Data Structures & Algorithms</h1>
 <p>This Repository is Made For Anyone Who Wants To Learn About : Big-O Notation, Data Structures, and Algorithms</p>
 
 <h4>We Will Be Disussing Big-O Notation</h4>
