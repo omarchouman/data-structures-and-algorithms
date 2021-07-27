@@ -147,6 +147,9 @@ Quicksort is a divide and conquer algorithms, it follows the partitioning proced
 Imagine some students standing in a line, these students should be arranged (Sorted) by their height.<br/>
 So what options do we have here?<br/>
 
+<br/>
+<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/students-in-line.jpg"/>
+  
 We Got 2 Options: <br/>
 
 1. Teacher can go and find each student's place 1 by 1.
@@ -158,6 +161,8 @@ Clearly, it's option 2 right? Why? <br/>
 
 Students arranging themselves would take less time than teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right hand sides if the student is taller or shorter. <br/>
 <p>
+
+
 
 <p>
 Choosing The Pivot: <br/>
