@@ -24,8 +24,19 @@
 <h4>We Will Be Discussing Some Of The Famous Algorithms Like</h4>
 <hr>
 <ul>
-  <li>Sorting Algorithms: QuickSort, BubbleSort, and MergeSort (coming soon)</li> 
-  <li>Searching Algorithms: Linear Search, and Binary Search (coming soon)</li>
+  <li>Sorting Algorithms: 
+  <ul>
+    <li><a href="#quicksort">QuickSort</a></li> 
+    <li>BubbleSort</li>  
+    <li>MergeSort</li> 
+  </ul>
+  </li> 
+  <li>Searching Algorithms: 
+  <ul>
+  <li>Linear Search</li> 
+  <li>Binary Search</li>
+  </ul>
+  </li>
   <li>Breadth First Search (BFS) (coming soon)</li>
   <li>Depth First Search (DFS) (coming soon)</li>
 </ul>
@@ -121,3 +132,41 @@ Key Value Pairs
 <h4>Hash Table Easiest Algorithm:  item % size</h4>
 
 <img src="https://github.com/omarchouman/Data-Structures/blob/main/Hash%20Table.png">
+
+
+<h2>Algorithms</h2>
+<hr/>
+
+<br/>
+
+<h3 id="quicksort">QuickSort</h3>
+<hr/>
+
+<p>
+Quicksort is a divide and conquer algorithms, it follows the partitioning procedure.<br/>
+Imagine some students standing in a line, these students should be arranged (Sorted) by their height.<br/>
+So what options do we have here?<br/>
+
+We Got 2 Options: <br/>
+
+1. Teacher can go and find each student's place 1 by 1.
+2. Students can arrange themselves. 
+
+Now, which option is better?<br/>
+
+Clearly, it's option 2 right? Why? <br/>
+
+Students arranging themselves would take less time than teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right hand sides if the student is taller or shorter. <br/>
+<p>
+
+<p>
+Choosing The Pivot: <br/>
+Pivot means the base element that you will take into consideration that will help you perform better.<br/>
+You might have heard about the word pivot before. <br/>
+
+Pivot can be chosen as the first or the last element. But i wouldn't recommend it. <br/>
+
+The reason is that you will run into worst case if you are dealing with nearly sorted or reversed lists.<br/>
+
+What i recommend instead is choosing the middle element as pivot.
+</p>
