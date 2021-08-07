@@ -27,7 +27,7 @@
   <li>Sorting Algorithms: 
   <ul>
     <li><a href="#quicksort">QuickSort</a></li> 
-    <li>BubbleSort</li>  
+    <li><a href="#bubblesort">BubbleSort</a></li>  
     <li>MergeSort</li> 
   </ul>
   </li> 
@@ -175,3 +175,12 @@ The reason is that you will run into worst case if you are dealing with nearly s
 
 What i recommend instead is choosing the middle element as pivot.
 </p>
+
+<br/><br/>
+
+<h3 id="bubblesort">Bubble Sort<h3>
+<hr/>
+
+<p>Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order we just swap them. And if we do that process multiple times we will eventually get our array to be sorted.</p>
+
+<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Bubble-sort.gif"/>
