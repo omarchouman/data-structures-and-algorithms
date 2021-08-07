@@ -33,7 +33,7 @@
   </li> 
   <li>Searching Algorithms: 
   <ul>
-  <li>Linear Search</li> 
+  <li><a href="#linear">Linear Search</a></li> 
   <li>Binary Search</li>
   </ul>
   </li>
@@ -195,3 +195,10 @@ What i recommend instead is choosing the middle element as pivot.
 <img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Merge-sort-example-300px.gif"/>
 
 <br/><br/>
+
+<h3 id="linear">Linear Search</h3>
+<hr/>
+
+<p>What you are really doing here is that you are iterating through whatever your working on (array, tree, graph) in a linear time (One by One)</p>
+
+<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Linear-Search.png"/>
