@@ -28,7 +28,7 @@
   <ul>
     <li><a href="#quicksort">QuickSort</a></li> 
     <li><a href="#bubblesort">BubbleSort</a></li>  
-    <li>MergeSort</li> 
+    <li><a href="#mergesort">MergeSort</a></li> 
   </ul>
   </li> 
   <li>Searching Algorithms: 
