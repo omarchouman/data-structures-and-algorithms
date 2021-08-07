@@ -34,7 +34,7 @@
   <li>Searching Algorithms: 
   <ul>
   <li><a href="#linear">Linear Search</a></li> 
-  <li>Binary Search</li>
+  <li><a href="#binary">Binary Search</a></li>
   </ul>
   </li>
   <li>Breadth First Search (BFS) (coming soon)</li>
@@ -199,6 +199,17 @@ What i recommend instead is choosing the middle element as pivot.
 <h3 id="linear">Linear Search</h3>
 <hr/>
 
-<p>What you are really doing here is that you are iterating through whatever your working on (array, tree, graph) in a linear time (One by One)</p>
+<p>What you are really doing here is that you are iterating through whatever your working on (array, tree, graph) in a linear time (One by One).</p>
 
 <img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Linear-Search.png"/>
+
+<br/><br/>
+
+<h3 id="binary">Binary Search</h3>
+<hr/>
+
+<p>With binary search you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For Example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.</p>
+
+<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/bePceUMnSG-binary_search_gif.gif"/>
+
+<br/><br/>
