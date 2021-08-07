@@ -184,3 +184,14 @@ What i recommend instead is choosing the middle element as pivot.
 <p>Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order we just swap them. And if we do that process multiple times we will eventually get our array to be sorted.</p>
 
 <img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Bubble-sort.gif"/>
+
+<br/><br/>
+
+<h3 id="mergesort">Merge Sort</h3>
+<hr/>
+
+<p>With Merge Sort what you are really doing is that you are dividing a large array into 2 halfs. You sort the left half then you sort the right half then you merge them together in a sorted way.</p>
+
+<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Merge-sort-example-300px.gif"/>
+
+<br/><br/>
