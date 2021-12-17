@@ -55,7 +55,7 @@ Big-O is the worst case scenario of the code which means the high time complexit
   <li>O(n!) (Worst Case)</li>
 </ul>
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Big-O.jpeg?raw=true">
+<img src="images/Big-O.jpeg">
 
 
 <h3 id="big-o-rules">Big-O Rules</h3>
@@ -76,7 +76,7 @@ An array is a collection of elements identified by their index.
   <li>Search,Insert, and Delete = O(n)</li>
 </ul>
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Array.png?raw=true">
+<img src="images/Array.png">
 
 <h2 id="dynamic-array-structure">Dynamic Array Structure (Double Size)</h2>
 
@@ -89,9 +89,9 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 <h4>Double Linked List:</h4>
 <p>Previous Address</p>      <p>Value</p>      <p>Next Address</p>
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Single%20Linked%20List.png">
+<img src="images/Single%20Linked%20List.png">
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Double%20Linked%20List.png">
+<img src="images/Double%20Linked%20List.png">
 
 
 <h2 id="stack">Stack Data Structure</h2>
@@ -105,7 +105,7 @@ Stack is a linear data structure that follows FILO (First In Last Out) mechanism
   <li>Peek or Top: returns top element stack</li>
 </ul>
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Stack.png">
+<img src="images/Stack.png">
 
 
 <h2 id="queue">Queue Data Structure</h2>
@@ -120,7 +120,7 @@ Queue is a listing data structure that follows FIFO ( First In First Out).
 
 Queue starts from Rear and ends at Front
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Queue.png">
+<img src="images/Queue.png">
 
 
 <h2 id="hash">Hash Table Data Structure</h2>
@@ -131,7 +131,7 @@ Key Value Pairs
 
 <h4>Hash Table Easiest Algorithm:  item % size</h4>
 
-<img src="https://github.com/omarchouman/Data-Structures/blob/main/Hash%20Table.png">
+<img src="images/Hash%20Table.png">
 
 
 <h2>Algorithms</h2>
@@ -148,7 +148,7 @@ Imagine some students standing in a line, these students should be arranged (Sor
 So what options do we have here?<br/>
 
 <br/>
-<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/students-in-line.jpg"/>
+<img src="images/students-in-line.jpg"/>
   
 We Got 2 Options: <br/>
 
@@ -183,7 +183,7 @@ What i recommend instead is choosing the middle element as pivot.
 
 <p>Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order we just swap them. And if we do that process multiple times we will eventually get our array to be sorted.</p>
 
-<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Bubble-sort.gif"/>
+<img src="images/Bubble-sort.gif"/>
 
 <br/><br/>
 
@@ -192,7 +192,7 @@ What i recommend instead is choosing the middle element as pivot.
 
 <p>With Merge Sort what you are really doing is that you are dividing a large array into 2 halfs. You sort the left half then you sort the right half then you merge them together in a sorted way.</p>
 
-<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Merge-sort-example-300px.gif"/>
+<img src="images/Merge-sort-example-300px.gif"/>
 
 <br/><br/>
 
@@ -201,7 +201,7 @@ What i recommend instead is choosing the middle element as pivot.
 
 <p>What you are really doing here is that you are iterating through whatever your working on (array, tree, graph) in a linear time (One by One).</p>
 
-<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/Linear-Search.png"/>
+<img src="images/Linear-Search.png"/>
 
 <br/><br/>
 
@@ -210,6 +210,6 @@ What i recommend instead is choosing the middle element as pivot.
 
 <p>With binary search you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For Example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.</p>
 
-<img src="https://github.com/omarchouman/Data-Structures-and-Algorithms/blob/main/bePceUMnSG-binary_search_gif.gif"/>
+<img src="images/bePceUMnSG-binary_search_gif.gif"/>
 
 <br/><br/>
