@@ -9,16 +9,20 @@
   <li><a href="#big-o-rules">Big-O Basic Rules</a></li>
 </ul
 
-<h4>We Will Be Covering 7 Different Data Structures For Now</h4>
+<h4>We Will Be Covering The Well-Known Data Structures</h4>
 <hr>
 
 <ul>
-  <li><a href="#array-structure">Array Structure:  (Fixed Size)</a></li>
-  <li><a href="#dynamic-array-structure">Dynamic Array Structure: (Double Size)</a></li>
+  <li><a href="#array-structure">Array Data Structure:  (Fixed Size)</a></li>
+  <li><a href="#dynamic-array-structure">Dynamic Array Data Structure: (Double Size)</a></li>
   <li><a href="#linked-list">Linked List Data Structure</a></li>
   <li><a href="#stack">Stack Data Structure</a></li>
   <li><a href="#queue">Queue Data Structure</a></li>
-  <li><a href="#hash">Hash Table Structure</a></li>
+  <li><a href="#hash">Hash Table Data Structure</a></li>
+  <li><a href="#tree">Tree Data Structure</a></li>
+  <li><a href="#graph">Graph Data Structure</a></li>
+  <li><a href="#heap">Heap Data Structure</a></li>
+  <li><a href="#trie">Trie Data Structure</a></li>
 </ul>
 
 <h4>We Will Be Discussing Some Of The Famous Algorithms Like</h4>
