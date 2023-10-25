@@ -1,5 +1,5 @@
 <h1>Data Structures & Algorithms</h1>
-<p>This Repository is Made For Anyone Who Wants To Learn About : Big-O Notation, Data Structures, and Algorithms</p>
+<p>This Repository is Made For Anyone Who Wants To Learn About Big-O Notation, Data Structures, and Algorithms</p>
 
 <h4>We Will Be Disussing Big-O Notation</h4>
 <hr>
@@ -7,7 +7,7 @@
   <li><a href="#big-o">What is Big-O ?</a></li>
   <li><a href="#big-o-cases">Big-O Cases From Best To Worst</a></li>
   <li><a href="#big-o-rules">Big-O Basic Rules</a></li>
-</ul
+</ul>
 
 <h4>We Will Be Covering The Well-Known Data Structures</h4>
 <hr>
@@ -65,7 +65,7 @@ Big-O is the worst case scenario of the code which means the high time complexit
 <h3 id="big-o-rules">Big-O Rules</h3>
 <ul>
   <li>+, -, /,  x, if       (1 Step)        (Constant)</li>
-  <li>Loop, SubRoutine, Function     (n Step)</li>
+  <li>Loop, SubRoutine, Function     (n Steps)</li>
   <li>To Access Memory  (2 Steps)</li>
 </ul>
 
