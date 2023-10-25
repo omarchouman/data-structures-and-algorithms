@@ -1,219 +1,164 @@
-<h1>Data Structures & Algorithms</h1>
-<p>This Repository is Made For Anyone Who Wants To Learn About Big-O Notation, Data Structures, and Algorithms</p>
+# Data Structures & Algorithms
 
-<h4>We Will Be Disussing Big-O Notation</h4>
-<hr>
-<ul>
-  <li><a href="#big-o">What is Big-O ?</a></li>
-  <li><a href="#big-o-cases">Big-O Cases From Best To Worst</a></li>
-  <li><a href="#big-o-rules">Big-O Basic Rules</a></li>
-</ul>
+This Repository is made for anyone who wants to learn about Big-O Notation, Data Structures, and Algorithms.
 
-<h4>We Will Be Covering The Well-Known Data Structures</h4>
-<hr>
+#### We Will Be Discussing Big-O Notation
+---
+- [What is Big-O ?](#big-o)
+- [Big-O Cases From Best To Worst](#big-o-cases)
+- [Big-O Basic Rules](#big-o-rules)
 
-<ul>
-  <li><a href="#array-structure">Array Data Structure:  (Fixed Size)</a></li>
-  <li><a href="#dynamic-array-structure">Dynamic Array Data Structure: (Double Size)</a></li>
-  <li><a href="#linked-list">Linked List Data Structure</a></li>
-  <li><a href="#stack">Stack Data Structure</a></li>
-  <li><a href="#queue">Queue Data Structure</a></li>
-  <li><a href="#hash">Hash Table Data Structure</a></li>
-  <li><a href="#tree">Tree Data Structure</a></li>
-  <li><a href="#graph">Graph Data Structure</a></li>
-  <li><a href="#heap">Heap Data Structure</a></li>
-  <li><a href="#trie">Trie Data Structure</a></li>
-</ul>
+#### We Will Be Covering The Well-Known Data Structures
+---
+- [Array Data Structure:  (Fixed Size)](#array-structure)
+- [Dynamic Array Data Structure: (Double Size)](#dynamic-array-structure)
+- [Linked List Data Structure](#linked-list)
+- [Stack Data Structure](#stack)
+- [Queue Data Structure](#queue)
+- [Hash Table Data Structure](#hash)
+- [Tree Data Structure](#tree)
+- [Graph Data Structure](#graph)
+- [Heap Data Structure](#heap)
+- [Trie Data Structure](#trie)
 
-<h4>We Will Be Discussing Some Of The Famous Algorithms Like</h4>
-<hr>
-<ul>
-  <li>Sorting Algorithms: 
-  <ul>
-    <li><a href="#quicksort">QuickSort</a></li> 
-    <li><a href="#bubblesort">BubbleSort</a></li>  
-    <li><a href="#mergesort">MergeSort</a></li> 
-  </ul>
-  </li> 
-  <li>Searching Algorithms: 
-  <ul>
-  <li><a href="#linear">Linear Search</a></li> 
-  <li><a href="#binary">Binary Search</a></li>
-  </ul>
-  </li>
-  <li>Breadth First Search (BFS) (coming soon)</li>
-  <li>Depth First Search (DFS) (coming soon)</li>
-</ul>
+#### We Will Be Discussing Some Of The Famous Algorithms Like
+---
+- **Sorting Algorithms:**
+  - [QuickSort](#quicksort)
+  - [BubbleSort](#bubblesort)
+  - [MergeSort](#mergesort)
+- **Searching Algorithms:**
+  - [Linear Search](#linear)
+  - [Binary Search](#binary)
+- Breadth First Search (BFS) (coming soon)
+- Depth First Search (DFS) (coming soon)
 
-<h2 id="big-o">Big-O Notation</h2>
+## Big-O Notation
+---
+Big-O is the worst-case scenario of the code, which means the high time complexity the code gets executed in.
 
-Big-O is the worst case scenario of the code which means the high time complexity the code gets executed in.
+### Big-O Cases From Best To Worst
+- O(logn) (Logarithmic)
+- O(1)
+- O(n) (Linear)
+- O(n^2) (Quadratic)
+- O(2^n) (Exponential)
+- O(n!) (Worst Case)
 
-<h3 id="big-o-cases">Big-O Cases From Best To Worst</h3>
-<ul>
-  <li>O(logn) (Logarithmic)</li>
-  <li>O(1)</li>
-  <li>O(n) (Linear)</li>
-  <li>O(n<sup>2</sup>) (Quadratic)</li>
-  <li>O(2<sup>n</sup>) (Exponential)</li>
-  <li>O(n!) (Worst Case)</li>
-</ul>
+![Big-O Image](images/Big-O.jpeg)
 
-<img src="images/Big-O.jpeg">
+### Big-O Rules
+- +, -, /, x, if (1 Step) (Constant)
+- Loop, SubRoutine, Function (n Steps)
+- To Access Memory (2 Steps)
 
-
-<h3 id="big-o-rules">Big-O Rules</h3>
-<ul>
-  <li>+, -, /,  x, if       (1 Step)        (Constant)</li>
-  <li>Loop, SubRoutine, Function     (n Steps)</li>
-  <li>To Access Memory  (2 Steps)</li>
-</ul>
-
-
-<h2 id="array-structure">Array Structure (Fixed Size)</h2>
-
+## Array Structure (Fixed Size)
+---
 An array is a collection of elements identified by their index.
 
-<h3>Time Complexity of An Array:</h3>
-<ul>
-  <li>Access = O(1)</li>
-  <li>Search,Insert, and Delete = O(n)</li>
-</ul>
+### Time Complexity of An Array:
+- Access = O(1)
+- Search, Insert, and Delete = O(n)
 
-<img src="images/Array.png">
+![Array Image](images/Array.png)
 
-<h2 id="dynamic-array-structure">Dynamic Array Structure (Double Size)</h2>
-
+## Dynamic Array Structure (Double Size)
+---
 A dynamic array doubles the size of your normal array to allow you to add new items to it.
 
-<h2 id="linked-list">Linked List Data Structure</h2>
-
+## Linked List Data Structure
+---
 Linked List is basically when you have a bunch of connected nodes where each node takes a value and then takes the address of the next node.
 
-<h4>Double Linked List:</h4>
-<p>Previous Address</p>      <p>Value</p>      <p>Next Address</p>
+#### Double Linked List:
+- Previous Address
+- Value
+- Next Address
 
-<img src="images/Single%20Linked%20List.png">
+![Single Linked List Image](images/Single%20Linked%20List.png)
 
-<img src="images/Double%20Linked%20List.png">
+![Double Linked List Image](images/Double%20Linked%20List.png)
 
-
-<h2 id="stack">Stack Data Structure</h2>
-
+## Stack Data Structure
+---
 Stack is a linear data structure that follows FILO (First In Last Out) mechanism.
 
 3 basic operations are performed in a stack:
-<ul>
-  <li>Push: Adds an item to the stack      (top + 1)</li>
-  <li>Pop: removes an item from the stack   (top – 1)</li>
-  <li>Peek or Top: returns top element stack</li>
-</ul>
+- Push: Adds an item to the stack (top + 1)
+- Pop: Removes an item from the stack (top – 1)
+- Peek or Top: Returns top element stack
 
-<img src="images/Stack.png">
+![Stack Image](images/Stack.png)
 
+## Queue Data Structure
+---
+Queue is a listing data structure that follows FIFO (First In First Out).
 
-<h2 id="queue">Queue Data Structure</h2>
-
-Queue is a listing data structure that follows FIFO ( First In First Out).
-
-2 basic operations are performed in queue:
-<ul>
-  <li>Rear : First Element in a Queue</li>
-  <li>Front : Next or Last Element in a Queue</li>
-</ul>
+2 basic operations are performed in the queue:
+- Rear: First Element in a Queue
+- Front: Next or Last Element in a Queue
 
 Queue starts from Rear and ends at Front
 
-<img src="images/Queue.png">
+![Queue Image](images/Queue.png)
 
+## Hash Table Data Structure
+---
+In a hash table, data is stored in an array format, where each data value has its own unique index value.
 
-<h2 id="hash">Hash Table Data Structure</h2>
+#### Key Value Pairs
+##### Hash Table Easiest Algorithm:  item % size
 
-In a hash table, data is stored in an array format, where each data value has its own unique index value. <br>
+![Hash Table Image](images/Hash%20Table.png)
 
-Key Value Pairs
+## Algorithms
+---
+### QuickSort
+---
+Quicksort is a divide and conquer algorithm; it follows the partitioning procedure. Imagine some students standing in a line, these students should be arranged (Sorted) by their height. So what options do we have here?
 
-<h4>Hash Table Easiest Algorithm:  item % size</h4>
+![Students in Line Image](images/students-in-line.jpg)
 
-<img src="images/Hash%20Table.png">
-
-
-<h2>Algorithms</h2>
-<hr/>
-
-<br/>
-
-<h3 id="quicksort">QuickSort</h3>
-<hr/>
-
-<p>
-Quicksort is a divide and conquer algorithms, it follows the partitioning procedure.<br/>
-Imagine some students standing in a line, these students should be arranged (Sorted) by their height.<br/>
-So what options do we have here?<br/>
-
-<br/>
-<img src="images/students-in-line.jpg"/>
-  
-We Got 2 Options: <br/>
+We Got 2 Options:
 
 1. Teacher can go and find each student's place 1 by 1.
-2. Students can arrange themselves. 
+2. Students can arrange themselves.
 
-Now, which option is better?<br/>
+Now, which option is better?
 
-Clearly, it's option 2 right? Why? <br/>
+Clearly, it's option 2 right? Why?
 
-Students arranging themselves would take less time than teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right hand sides if the student is taller or shorter. <br/>
-<p>
+Students arranging themselves would take less time than the teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right-hand sides if the student is taller or shorter.
 
+Choosing The Pivot:
+Pivot means the base element that you will take into consideration that will help you perform better. You might have heard about the word pivot before.
 
+Pivot can be chosen as the first or the last element. But I wouldn't recommend it.
 
-<p>
-Choosing The Pivot: <br/>
-Pivot means the base element that you will take into consideration that will help you perform better.<br/>
-You might have heard about the word pivot before. <br/>
+The reason is that you will run into the worst case if you are dealing with nearly sorted or reversed lists.
 
-Pivot can be chosen as the first or the last element. But i wouldn't recommend it. <br/>
+What I recommend instead is choosing the middle element as pivot.
 
-The reason is that you will run into worst case if you are dealing with nearly sorted or reversed lists.<br/>
+### Bubble Sort
+---
+Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order, we just swap them. And if we do that process multiple times, we will eventually get our array to be sorted.
 
-What i recommend instead is choosing the middle element as pivot.
-</p>
+![Bubble Sort Image](images/Bubble-sort.gif)
 
-<br/><br/>
+### Merge Sort
+---
+With Merge Sort, what you are really doing is that you are dividing a large array into 2 halves. You sort the left half then you sort the right half, then you merge them together in a sorted way.
 
-<h3 id="bubblesort">Bubble Sort<h3>
-<hr/>
+![Merge Sort Image](images/Merge-sort-example-300px.gif)
 
-<p>Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order we just swap them. And if we do that process multiple times we will eventually get our array to be sorted.</p>
+### Linear Search
+---
+What you are really doing here is that you are iterating through whatever you're working on (array, tree, graph) in a linear time (One by One).
 
-<img src="images/Bubble-sort.gif"/>
+![Linear Search Image](images/Linear-Search.png)
 
-<br/><br/>
+### Binary Search
+---
+With binary search, you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.
 
-<h3 id="mergesort">Merge Sort</h3>
-<hr/>
-
-<p>With Merge Sort what you are really doing is that you are dividing a large array into 2 halfs. You sort the left half then you sort the right half then you merge them together in a sorted way.</p>
-
-<img src="images/Merge-sort-example-300px.gif"/>
-
-<br/><br/>
-
-<h3 id="linear">Linear Search</h3>
-<hr/>
-
-<p>What you are really doing here is that you are iterating through whatever your working on (array, tree, graph) in a linear time (One by One).</p>
-
-<img src="images/Linear-Search.png"/>
-
-<br/><br/>
-
-<h3 id="binary">Binary Search</h3>
-<hr/>
-
-<p>With binary search you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For Example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.</p>
-
-<img src="images/bePceUMnSG-binary_search_gif.gif"/>
-
-<br/><br/>
+![Binary Search Image](images/bePceUMnSG-binary_search_gif.gif)
