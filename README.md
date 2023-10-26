@@ -4,7 +4,7 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 
 #### We Will Be Discussing Big-O Notation
 ---
-- [What is Big-O ?](#big-o)
+- [What is Big-O?](#big-o)
 - [Big-O Cases From Best To Worst](#big-o-cases)
 - [Big-O Basic Rules](#big-o-rules)
 
@@ -33,7 +33,7 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 - Breadth First Search (BFS) (coming soon)
 - Depth First Search (DFS) (coming soon)
 
-## Big-O Notation
+## What is Big-O?
 ---
 Big-O is the worst-case scenario of the code, which means the high time complexity the code gets executed in.
 
