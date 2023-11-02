@@ -4,18 +4,18 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 
 #### We Will Be Discussing Big-O Notation
 ---
-- [What is Big-O?](#big-o)
+- [What is Big-O?](#what-is-big-o)
 - [Big-O Cases From Best To Worst](#big-o-cases)
 - [Big-O Basic Rules](#big-o-rules)
 
 #### We Will Be Covering The Well-Known Data Structures
 ---
-- [Array Data Structure:  (Fixed Size)](#array-structure)
+- [Array Data Structure: (Fixed Size)](#array-structure)
 - [Dynamic Array Data Structure: (Double Size)](#dynamic-array-structure)
 - [Linked List Data Structure](#linked-list)
 - [Stack Data Structure](#stack)
 - [Queue Data Structure](#queue)
-- [Hash Table Data Structure](#hash)
+- [Hash Table Data Structure](#hash-table)
 - [Tree Data Structure](#tree)
 - [Graph Data Structure](#graph)
 - [Heap Data Structure](#heap)
@@ -28,10 +28,10 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
   - [BubbleSort](#bubblesort)
   - [MergeSort](#mergesort)
 - **Searching Algorithms:**
-  - [Linear Search](#linear)
-  - [Binary Search](#binary)
-- Breadth First Search (BFS) (coming soon)
-- Depth First Search (DFS) (coming soon)
+  - [Linear Search](#linear-search)
+  - [Binary Search](#binary-search)
+- [Breadth First Search (BFS) (coming soon)](#bfs-coming-soon)
+- [Depth First Search (DFS) (coming soon)](#dfs-coming-soon)
 
 ## What is Big-O?
 ---
@@ -128,37 +128,4 @@ Now, which option is better?
 
 Clearly, it's option 2 right? Why?
 
-Students arranging themselves would take less time than the teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right-hand sides if the student is taller or shorter.
-
-Choosing The Pivot:
-Pivot means the base element that you will take into consideration that will help you perform better. You might have heard about the word pivot before.
-
-Pivot can be chosen as the first or the last element. But I wouldn't recommend it.
-
-The reason is that you will run into the worst case if you are dealing with nearly sorted or reversed lists.
-
-What I recommend instead is choosing the middle element as pivot.
-
-### Bubble Sort
----
-Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order, we just swap them. And if we do that process multiple times, we will eventually get our array to be sorted.
-
-![Bubble Sort Image](images/Bubble-sort.gif)
-
-### Merge Sort
----
-With Merge Sort, what you are really doing is that you are dividing a large array into 2 halves. You sort the left half then you sort the right half, then you merge them together in a sorted way.
-
-![Merge Sort Image](images/Merge-sort-example-300px.gif)
-
-### Linear Search
----
-What you are really doing here is that you are iterating through whatever you're working on (array, tree, graph) in a linear time (One by One).
-
-![Linear Search Image](images/Linear-Search.png)
-
-### Binary Search
----
-With binary search, you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.
-
-![Binary Search Image](images/bePceUMnSG-binary_search_gif.gif)
+Students arranging themselves would take less time than the teacher going for their
