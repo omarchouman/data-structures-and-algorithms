@@ -10,16 +10,16 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 
 #### We Will Be Covering The Well-Known Data Structures
 ---
-- [Array Data Structure: (Fixed Size)](#array-structure)
-- [Dynamic Array Data Structure: (Double Size)](#dynamic-array-structure)
-- [Linked List Data Structure](#linked-list)
-- [Stack Data Structure](#stack)
-- [Queue Data Structure](#queue)
-- [Hash Table Data Structure](#hash-table)
-- [Tree Data Structure](#tree)
-- [Graph Data Structure](#graph)
-- [Heap Data Structure](#heap)
-- [Trie Data Structure](#trie)
+- [Array Data Structure: (Fixed Size)](#array-structure-fixed-size)
+- [Dynamic Array Data Structure: (Double Size)](#dynamic-array-structure-double-size)
+- [Linked List Data Structure](#linked-list-data-structure)
+- [Stack Data Structure](#stack-data-structure)
+- [Queue Data Structure](#queue-data-structure)
+- [Hash Table Data Structure](#hash-table-data-structure)
+- [Tree Data Structure](#tree-data-structure)
+- [Graph Data Structure](#graph-data-structure)
+- [Heap Data Structure](#heap-data-structure)
+- [Trie Data Structure](#trie-data-structure)
 
 #### We Will Be Discussing Some Of The Famous Algorithms Like
 ---
@@ -30,8 +30,8 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 - **Searching Algorithms:**
   - [Linear Search](#linear-search)
   - [Binary Search](#binary-search)
-- [Breadth First Search (BFS) (coming soon)](#bfs-coming-soon)
-- [Depth First Search (DFS) (coming soon)](#dfs-coming-soon)
+- [Breadth First Search (BFS) (coming soon)](#breadth-first-search-bfs-coming-soon)
+- [Depth First Search (DFS) (coming soon)](#depth-first-search-dfs-coming-soon)
 
 ## What is Big-O?
 ---
