@@ -16,10 +16,10 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 - [Stack Data Structure](#stack-data-structure)
 - [Queue Data Structure](#queue-data-structure)
 - [Hash Table Data Structure](#hash-table-data-structure)
-- [Tree Data Structure](#tree-data-structure)
-- [Graph Data Structure](#graph-data-structure)
-- [Heap Data Structure](#heap-data-structure)
-- [Trie Data Structure](#trie-data-structure)
+- [Tree Data Structure (Coming Soon)](#tree-data-structure)
+- [Graph Data Structure (Coming Soon)](#graph-data-structure)
+- [Heap Data Structure (Coming Soon)](#heap-data-structure)
+- [Trie Data Structure (Coming Soon)](#trie-data-structure)
 
 #### We Will Be Discussing Some Of The Famous Algorithms Like
 ---
