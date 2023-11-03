@@ -16,10 +16,10 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 - [Stack Data Structure](#stack-data-structure)
 - [Queue Data Structure](#queue-data-structure)
 - [Hash Table Data Structure](#hash-table-data-structure)
-- [Tree Data Structure (Coming Soon)](#tree-data-structure)
-- [Graph Data Structure (Coming Soon)](#graph-data-structure)
-- [Heap Data Structure (Coming Soon)](#heap-data-structure)
-- [Trie Data Structure (Coming Soon)](#trie-data-structure)
+- [Tree Data Structure](#tree-data-structure)
+- [Graph Data Structure](#graph-data-structure)
+- [Heap Data Structure](#heap-data-structure)
+- [Trie Data Structure](#trie-data-structure)
 
 #### We Will Be Discussing Some Of The Famous Algorithms Like
 ---
@@ -110,6 +110,30 @@ In a hash table, data is stored in an array format, where each data value has it
 ##### Hash Table Easiest Algorithm:  item % size
 
 ![Hash Table Image](images/Hash%20Table.png)
+
+## Tree Data Structure
+---
+A tree data structure is a hierarchical structure composed of nodes, where each node has a value and may have links to other nodes. The topmost node in a tree is called the root, and nodes with no children are called leaves. Each node in a tree has a parent node (except for the root) and zero or more child nodes. Trees are widely used in various algorithms and applications, including hierarchical data representation.
+
+![Tree Image](images/TreeDS.png)
+
+## Graph Data Structure
+---
+A graph is a collection of nodes connected by edges. Nodes represent entities, and edges represent relationships between these entities. Graphs can be either directed (edges have a specific direction) or undirected. They are used to model a wide range of relationships, such as social networks, computer networks, and dependencies between tasks. Graphs are essential in algorithms for pathfinding, network analysis, and optimization problems.
+
+![Graph Image](images/GraphDS.png)
+
+## Heap Data Structure
+---
+A heap is a specialized tree-based data structure that satisfies the heap property. In a max heap, the value of each node is greater than or equal to the values of its children. In a min heap, the value of each node is less than or equal to the values of its children. Heaps are commonly used to implement priority queues, where elements with higher priorities are served before those with lower priorities. The heap data structure facilitates efficient insertion, deletion, and finding the minimum or maximum element.
+
+![Heap Image](images/HeapDS.png)
+
+## Trie Data Structure
+---
+A trie, also known as a prefix tree, is an ordered tree data structure that is used to store a dynamic set or associative array where the keys are usually strings. Each node in the trie represents a single character, and the path from the root to a particular node spells out a word or sequence of characters. Tries are particularly useful in applications involving autocomplete suggestions, spell checking, and efficient string matching algorithms.
+
+![Heap Image](images/TrieDS.png)
 
 ## Algorithms
 ---
