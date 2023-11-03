@@ -81,7 +81,7 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 
 ## Stack Data Structure
 ---
-Stack is a linear data structure that follows FILO (First In Last Out) mechanism.
+Stack is a linear data structure that follows the FILO (First In Last Out) mechanism.
 
 3 basic operations are performed in a stack:
 - Push: Adds an item to the stack (top + 1)
@@ -98,7 +98,7 @@ Queue is a listing data structure that follows FIFO (First In First Out).
 - Rear: First Element in a Queue
 - Front: Next or Last Element in a Queue
 
-Queue starts from Rear and ends at Front
+The queue starts from the Rear and ends at the Front
 
 ![Queue Image](images/Queue.png)
 
@@ -131,7 +131,7 @@ A heap is a specialized tree-based data structure that satisfies the heap proper
 
 ## Trie Data Structure
 ---
-A trie, also known as a prefix tree, is an ordered tree data structure that is used to store a dynamic set or associative array where the keys are usually strings. Each node in the trie represents a single character, and the path from the root to a particular node spells out a word or sequence of characters. Tries are particularly useful in applications involving autocomplete suggestions, spell checking, and efficient string matching algorithms.
+A trie, also known as a prefix tree, is an ordered tree data structure that is used to store a dynamic set or associative array where the keys are usually strings. Each node in the trie represents a single character, and the path from the root to a particular node spells out a word or sequence of characters. Tries are particularly useful in applications involving autocomplete suggestions, spell checking, and efficient string-matching algorithms.
 
 ![Heap Image](images/TrieDS.png)
 
@@ -139,18 +139,18 @@ A trie, also known as a prefix tree, is an ordered tree data structure that is u
 ---
 ### QuickSort
 ---
-Quicksort is a divide and conquer algorithm; it follows the partitioning procedure. Imagine some students standing in a line, these students should be arranged (Sorted) by their height. So what options do we have here?
+Quicksort is a divide-and-conquer algorithm; it follows the partitioning procedure. Imagine some students standing in a line, these students should be arranged (Sorted) by their height. So what options do we have here?
 
 ![Students in Line Image](images/students-in-line.jpg)
 
 We Got 2 Options:
 
-1. Teacher can go and find each student's place 1 by 1.
+1. The teacher can go and find each student's place 1 by 1.
 2. Students can arrange themselves.
 
 Now, which option is better?
 
-Clearly, it's option 2 right? Why?
+Clearly, it's option 2, right? Why?
 
 Students arranging themselves would take less time than the teacher going for their places 1 by 1. That way, students can arrange themselves by asking the left and right-hand sides if the student is taller or shorter.
 
@@ -161,11 +161,11 @@ Pivot can be chosen as the first or the last element. But I wouldn't recommend i
 
 The reason is that you will run into the worst case if you are dealing with nearly sorted or reversed lists.
 
-What I recommend instead is choosing the middle element as pivot.
+What I recommend instead is choosing the middle element as a pivot.
 
 ### Bubble Sort
 ---
-Bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order, we just swap them. And if we do that process multiple times, we will eventually get our array to be sorted.
+The bubble sort algorithm uses the concept of swapping. Whenever we see elements that are out of order, we just swap them. And if we do that process multiple times, we will eventually get our array to be sorted.
 
 ![Bubble Sort Image](images/Bubble-sort.gif)
 
@@ -183,6 +183,18 @@ What you are really doing here is that you are iterating through whatever you're
 
 ### Binary Search
 ---
-With binary search, you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminating the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.
+With binary search, you will always find yourself taking the midpoint of the array or stack that you are working with and then you compare it. For example: is 13 after or before 20? (assuming that 20 is our midpoint) It is before so what you will do is eliminate the second half of the stack (after the midpoint) and you keep repeating the process over and over till you find what you are looking for.
 
 ![Binary Search Image](images/bePceUMnSG-binary_search_gif.gif)
+
+## Breadth-First Search (BFS)
+---
+Breadth-First Search (BFS) is an algorithm used for traversing or searching tree or graph data structures. Starting at the tree root or an arbitrary node, the algorithm explores the neighbor nodes at the present depth before moving on to nodes at the next depth level. BFS is commonly used to find the shortest path between two nodes, and it ensures that the shallowest nodes are visited first.
+
+![Breadth First Search Image](images/BFSAlgo.gif)
+
+## Depth-First Search (DFS)
+---
+Depth-first search (DFS) is another algorithm for traversing or searching tree or graph data structures. Unlike BFS, DFS explores as far as possible along each branch before backtracking. This algorithm is often used to detect cycles in graphs, topological sorting, and solving puzzles with multiple solutions.
+
+![Depth First Search Image](images/DFSAlgo.gif)
