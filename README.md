@@ -70,7 +70,7 @@ An array is a collection of elements identified by their index.
 - Access = O(1)
 - Search, Insert, and Delete = O(n)
 
-### Use Cases
+### Array Use Cases
 | Use Case                   | Description                                                                                                           |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Static Data Storage        | Ideal for storing a fixed-size collection of elements where random access and constant-time retrieval are crucial.     |
@@ -86,7 +86,7 @@ An array is a collection of elements identified by their index.
 ---
 A dynamic array doubles the size of your normal array to allow you to add new items to it.
 
-### Use Cases
+### Dynamic Array Use Cases
 | Use Case                          | Description                                                                                                             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Dynamic Data Storage              | Use when a resizable collection that can efficiently grow or shrink based on the number of elements is required.        |
@@ -104,7 +104,7 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 - Value
 - Next Address
 
-### Use Cases
+### Linked List Use Cases
 | Use Case                     | Description                                                                                                   |
 |------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Dynamic Memory Allocation    | Allows dynamic memory allocation, making it suitable when the size of the data structure is unpredictable.     |
@@ -126,7 +126,7 @@ Stack is a linear data structure that follows the FILO (First In Last Out) mecha
 - Pop: Removes an item from the stack (top – 1)
 - Peek or Top: Returns top element stack
 
-### Use Cases
+### Stack Use Cases
 | Use Case              | Description                                                                                               |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
 | Function Call History | Maintains a record of function calls, facilitating easy backtracking and debugging.                        |
@@ -148,7 +148,7 @@ Queue is a listing data structure that follows FIFO (First In First Out).
 
 The queue starts from the Rear and ends at the Front
 
-### Use Cases
+### Queue Use Cases
 | Use Case                  | Description                                                                                                  |
 |---------------------------|--------------------------------------------------------------------------------------------------------------|
 | Task Scheduling           | Facilitates task scheduling in operating systems, ensuring tasks are executed in a first-come-first-serve order. |
@@ -164,11 +164,29 @@ In a hash table, data is stored in an array format, where each data value has it
 #### Key Value Pairs
 ##### Hash Table Easiest Algorithm:  item % size
 
+#### Hash Table Use Cases
+
+| Use Case                          | Description                                                                                                             |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Efficient Data Retrieval          | Enables fast data retrieval based on key-value pairs, making it suitable for scenarios where quick lookups are essential.|
+| Hashing Functions in Cryptography | Hash tables are used in cryptographic algorithms for generating hash values, ensuring secure storage and retrieval of data. |
+| Caching Mechanism                 | Commonly employed in caching mechanisms to quickly determine whether a certain piece of data is present in the cache.      |
+| Symbol Tables in Compilers        | Utilized in compilers for managing symbol tables, facilitating quick searches and updates during the compilation process. |
+
 <br>![Hash Table Image](images/Hash%20Table.png)
 
 ## Tree Data Structure
 ---
 A tree data structure is a hierarchical structure composed of nodes, where each node has a value and may have links to other nodes. The topmost node in a tree is called the root, and nodes with no children are called leaves. Each node in a tree has a parent node (except for the root) and zero or more child nodes. Trees are widely used in various algorithms and applications, including hierarchical data representation.
+
+#### Tree Use Cases
+
+| Use Case                                | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Hierarchical Data Representation        | Trees are commonly used to represent hierarchical structures, such as file systems, organizational charts, and XML/HTML structures. |
+| Binary Search Tree for Efficient Search | Binary search trees provide an efficient way to search, insert, and delete elements in a sorted order, making them suitable for databases and dictionaries. |
+| Expression Parsing                      | In compilers, trees are utilized for parsing mathematical expressions and converting them into a format suitable for execution. |
+| Huffman Coding for Compression          | Trees play a key role in Huffman coding, a compression algorithm used to reduce the size of data files. |
 
 <br>![Tree Image](images/TreeDS.png)
 
@@ -176,17 +194,44 @@ A tree data structure is a hierarchical structure composed of nodes, where each 
 ---
 A graph is a collection of nodes connected by edges. Nodes represent entities, and edges represent relationships between these entities. Graphs can be either directed (edges have a specific direction) or undirected. They are used to model a wide range of relationships, such as social networks, computer networks, and dependencies between tasks. Graphs are essential in algorithms for pathfinding, network analysis, and optimization problems.
 
+#### Graph Use Cases
+
+| Use Case                        | Description                                                                                                  |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Social Network Analysis         | Graphs model social networks, allowing for the analysis of relationships, identification of influencers, and community detection. |
+| Network Routing and Planning     | Graphs are used in network routing algorithms to find the optimal path between two nodes, optimizing data transfer. |
+| Dependency Resolution in Software| Representing dependencies between software components, graphs aid in resolving dependencies during installation and updates. |
+| Recommendation Systems           | Graphs assist in building recommendation systems by modeling user-item relationships and predicting preferences. |
+
 <br>![Graph Image](images/GraphDS.png)
 
 ## Heap Data Structure
 ---
 A heap is a specialized tree-based data structure that satisfies the heap property. In a max heap, the value of each node is greater than or equal to the values of its children. In a min heap, the value of each node is less than or equal to the values of its children. Heaps are commonly used to implement priority queues, where elements with higher priorities are served before those with lower priorities. The heap data structure facilitates efficient insertion, deletion, and finding the minimum or maximum element.
 
+#### Heap Use Cases
+
+| Use Case                          | Description                                                                                               |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Priority Queue Implementation     | Heaps are commonly used to implement priority queues where elements with higher priorities are served first.|
+| D-ary Heap for Graph Algorithms    | In graph algorithms like Dijkstra's shortest path, a D-ary heap efficiently extracts the minimum element.   |
+| Memory Management in Operating Systems | Operating systems use heaps for dynamic memory allocation and deallocation, ensuring efficient memory management. |
+| Job Scheduling in Multiprogramming Systems | Heaps assist in scheduling jobs based on priority levels in multiprogramming systems.                           |
+
 <br>![Heap Image](images/HeapDS.png)
 
 ## Trie Data Structure
 ---
 A trie, also known as a prefix tree, is an ordered tree data structure that is used to store a dynamic set or associative array where the keys are usually strings. Each node in the trie represents a single character, and the path from the root to a particular node spells out a word or sequence of characters. Tries are particularly useful in applications involving autocomplete suggestions, spell checking, and efficient string-matching algorithms.
+
+#### Trie Use Cases
+
+| Use Case                              | Description                                                                                                       |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| Autocomplete and Predictive Text      | Tries are used in applications involving autocomplete suggestions and predictive text, providing quick word suggestions. |
+| Spell Checking                        | Spell checking algorithms use tries to efficiently validate whether a given word is spelled correctly.             |
+| IP Routing Tables                     | Tries are employed in networking for storing and searching IP routing tables, facilitating fast IP address lookup.   |
+| Symbol Tables in Compilers            | Compilers use tries to manage symbol tables, aiding in the quick search and storage of identifiers during compilation.|
 
 <br>![Heap Image](images/TrieDS.png)
 
