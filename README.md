@@ -40,8 +40,8 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 - **Searching Algorithms:**
   - [Linear Search](#linear-search)
   - [Binary Search](#binary-search)
-- [Breadth First Search (BFS) (coming soon)](#breadth-first-search-bfs-coming-soon)
-- [Depth First Search (DFS) (coming soon)](#depth-first-search-dfs-coming-soon)
+- [Breadth First Search (BFS)](#breadth-first-search-bfs)
+- [Depth First Search (DFS)](#depth-first-search-dfs)
 
 ## What is Big-O?
 ---
