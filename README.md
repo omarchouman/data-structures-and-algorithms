@@ -34,9 +34,9 @@ This Repository is made for anyone who wants to learn about Big-O Notation, Data
 #### We Will Be Discussing Some Of The Famous Algorithms Like
 ---
 - **Sorting Algorithms:**
-  - [QuickSort](#quicksort)
-  - [BubbleSort](#bubblesort)
-  - [MergeSort](#mergesort)
+  - [QuickSort](#quick-sort)
+  - [BubbleSort](#bubble-sort)
+  - [MergeSort](#merge-sort)
 - **Searching Algorithms:**
   - [Linear Search](#linear-search)
   - [Binary Search](#binary-search)
@@ -192,7 +192,7 @@ A trie, also known as a prefix tree, is an ordered tree data structure that is u
 
 ## Algorithms
 ---
-### QuickSort
+### Quick Sort
 ---
 Quicksort is a divide-and-conquer algorithm; it follows the partitioning procedure. Imagine some students standing in a line, these students should be arranged (Sorted) by their height. So what options do we have here?
 
