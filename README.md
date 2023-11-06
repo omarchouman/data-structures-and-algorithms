@@ -152,7 +152,9 @@ The queue starts from the Rear and ends at the Front
 | Use Case                  | Description                                                                                                  |
 |---------------------------|--------------------------------------------------------------------------------------------------------------|
 | Task Scheduling           | Facilitates task scheduling in operating systems, ensuring tasks are executed in a first-come-first-serve order. |
-| Print Queue               | Manages the order in which print jobs are processed, ensuring fairness and efficient
+| Print Queue               | Manages the order in which print jobs are processed, ensuring fairness and efficiency.                         |
+| Customer Support Queue    | Organizes incoming customer support requests, addressing issues in the order they are received for fair and timely resolution. |
+| BFS in Graph Traversal    | Utilized in breadth-first search algorithms for graph traversal, exploring nodes level by level to find the shortest path or discover connected components. |
 
 
 <br>![Queue Image](images/Queue.png)
