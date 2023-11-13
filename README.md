@@ -143,10 +143,10 @@ Stack is a linear data structure that follows the FILO (First In Last Out) mecha
 Queue is a listing data structure that follows FIFO (First In First Out).
 
 2 basic operations are performed in the queue:
-- Rear: First Element in a Queue
-- Front: Next or Last Element in a Queue
+- Front: First Element in a Queue
+- Rear: Next or Last Element in a Queue
 
-The queue starts from the Rear and ends at the Front
+The queue starts from the Front and ends at the Rear
 
 ### Queue Use Cases
 | Use Case                  | Description                                                                                                  |
