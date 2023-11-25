@@ -119,7 +119,7 @@ Linked List is basically when you have a bunch of connected nodes where each nod
 
 ## Stack Data Structure
 ---
-Stack is a linear data structure that follows the FILO (First In Last Out) mechanism.
+Stack is a linear data structure that follows the LIFO (Last In First Out) mechanism.
 
 3 basic operations are performed in a stack:
 - Push: Adds an item to the stack (top + 1)
