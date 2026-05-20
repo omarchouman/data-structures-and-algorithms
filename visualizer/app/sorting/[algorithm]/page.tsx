@@ -9,6 +9,9 @@ import { generateBubbleSortSteps } from "@/lib/algorithms/sorting/bubbleSort";
 import { generateInsertionSortSteps } from "@/lib/algorithms/sorting/insertionSort";
 import { generateMergeSortSteps } from "@/lib/algorithms/sorting/mergeSort";
 import { generateQuickSortSteps } from "@/lib/algorithms/sorting/quickSort";
+import { generateSelectionSortSteps } from "@/lib/algorithms/sorting/selectionSort";
+import { generateHeapSortSteps } from "@/lib/algorithms/sorting/heapSort";
+import { generateRadixSortSteps } from "@/lib/algorithms/sorting/radixSort";
 import { SortStep } from "@/lib/types";
 
 const DEFAULT_ARRAY = [38, 27, 43, 3, 9, 82, 10, 64, 15, 51, 7, 29, 71, 44, 18, 56, 33, 22, 67, 5];
@@ -18,6 +21,9 @@ const ALGORITHMS: Record<string, { label: string; generate: (arr: number[]) => S
   "insertion-sort": { label: "Insertion Sort", generate: generateInsertionSortSteps },
   "merge-sort":     { label: "Merge Sort",     generate: generateMergeSortSteps },
   "quick-sort":     { label: "Quick Sort",     generate: generateQuickSortSteps },
+  "selection-sort": { label: "Selection Sort", generate: generateSelectionSortSteps },
+  "heap-sort":      { label: "Heap Sort",      generate: generateHeapSortSteps },
+  "radix-sort":     { label: "Radix Sort",     generate: generateRadixSortSteps },
 };
 
 export default function SortingPage() {
