@@ -22,3 +22,14 @@ export type QueueStep = {
   action: "enqueue" | "dequeue" | "idle";
   highlight: number | null;
 };
+
+export type SearchStep = {
+  array: number[];
+  target: number;
+  current: number | null;
+  low: number | null;
+  high: number | null;
+  mid: number | null;
+  found: number | null;
+  eliminated: number[];
+};
