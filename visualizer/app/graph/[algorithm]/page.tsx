@@ -5,13 +5,27 @@ import { useMemo } from "react";
 import { useAnimationPlayer } from "@/components/player/useAnimationPlayer";
 import { AnimationPlayer } from "@/components/player/AnimationPlayer";
 import { GraphVisualizer } from "@/components/visualizers/GraphVisualizer";
+import { WeightedGraphVisualizer } from "@/components/visualizers/WeightedGraphVisualizer";
+import { MatrixVisualizer } from "@/components/visualizers/MatrixVisualizer";
 import { generateBFSSteps, SAMPLE_GRAPH } from "@/lib/algorithms/graph/bfs";
 import { generateDFSSteps } from "@/lib/algorithms/graph/dfs";
-import { GraphStep } from "@/lib/types";
+import { generateDijkstraSteps } from "@/lib/algorithms/graph/dijkstra";
+import { generateBellmanFordSteps } from "@/lib/algorithms/graph/bellmanFord";
+import { generatePrimsSteps } from "@/lib/algorithms/graph/primsMST";
+import { generateKruskalsSteps } from "@/lib/algorithms/graph/kruskalsMST";
+import { generateFloydWarshallSteps } from "@/lib/algorithms/graph/floydWarshall";
+import { GraphStep, WeightedGraphStep, FloydWarshallStep } from "@/lib/types";
 
-const ALGORITHMS: Record<string, { label: string; generate: () => GraphStep[] }> = {
-  bfs: { label: "Breadth-First Search", generate: () => generateBFSSteps(SAMPLE_GRAPH, "A") },
-  dfs: { label: "Depth-First Search",   generate: () => generateDFSSteps(SAMPLE_GRAPH, "A") },
+type AnyStep = GraphStep | WeightedGraphStep | FloydWarshallStep;
+
+const ALGORITHMS: Record<string, { label: string; kind: string; generate: () => AnyStep[] }> = {
+  bfs:             { label: "Breadth-First Search",  kind: "unweighted", generate: () => generateBFSSteps(SAMPLE_GRAPH, "A") },
+  dfs:             { label: "Depth-First Search",    kind: "unweighted", generate: () => generateDFSSteps(SAMPLE_GRAPH, "A") },
+  dijkstra:        { label: "Dijkstra's Shortest Path", kind: "weighted-dist", generate: () => generateDijkstraSteps("A") },
+  "bellman-ford":  { label: "Bellman-Ford",          kind: "weighted-dist", generate: () => generateBellmanFordSteps("A") },
+  "prims-mst":     { label: "Prim's MST",            kind: "weighted-mst",  generate: () => generatePrimsSteps("A") },
+  "kruskals-mst":  { label: "Kruskal's MST",         kind: "weighted-mst",  generate: () => generateKruskalsSteps() },
+  "floyd-warshall":{ label: "Floyd-Warshall",        kind: "matrix",        generate: () => generateFloydWarshallSteps() },
 };
 
 export default function GraphPage() {
@@ -29,7 +43,10 @@ export default function GraphPage() {
         <h1 className="text-xl font-semibold">{config.label}</h1>
       </header>
       <main className="flex-1 flex items-center justify-center p-8">
-        <GraphVisualizer step={player.currentStep} />
+        {config.kind === "unweighted" && <GraphVisualizer step={player.currentStep as GraphStep} />}
+        {config.kind === "weighted-dist" && <WeightedGraphVisualizer step={player.currentStep as WeightedGraphStep} showDistances />}
+        {config.kind === "weighted-mst" && <WeightedGraphVisualizer step={player.currentStep as WeightedGraphStep} showMST />}
+        {config.kind === "matrix" && <MatrixVisualizer step={player.currentStep as FloydWarshallStep} />}
       </main>
       <AnimationPlayer
         index={player.index}
