@@ -52,7 +52,10 @@ export function AnimationPlayer({
               max={8}
               step={1}
               value={[sliderValue]}
-              onValueChange={([v]) => onSpeedChange(sliderToMs(v))}
+              onValueChange={(val) => {
+                const v = Array.isArray(val) ? val[0] : val;
+                onSpeedChange(sliderToMs(v));
+              }}
             />
           </div>
           <span className="text-sm text-slate-500 w-10">{sliderToLabel(sliderValue)}</span>

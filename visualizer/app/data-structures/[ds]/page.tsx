@@ -20,7 +20,7 @@ type DSKey = keyof typeof DS_CONFIG;
 export default function DataStructurePage() {
   const { ds } = useParams<{ ds: string }>();
   const config = DS_CONFIG[ds as DSKey];
-  const steps = useMemo(() => config?.generate() ?? [], [ds]);
+  const steps = useMemo(() => (config?.generate() ?? []) as (StackStep | QueueStep)[], [ds]);
   const player = useAnimationPlayer(steps);
 
   if (!config) return <div className="p-8 text-slate-500">Data structure not found.</div>;
