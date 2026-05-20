@@ -51,3 +51,38 @@ export type FloydWarshallStep = {
   j: number;
   updated: boolean;
 };
+
+export type FibStep = {
+  table: (number | null)[];
+  current: number;
+  label: string;
+};
+
+export type KnapsackStep = {
+  table: number[][];
+  currentItem: number;
+  currentWeight: number;
+  items: { weight: number; value: number; name: string }[];
+};
+
+export type LCSStep = {
+  s1: string;
+  s2: string;
+  table: number[][];
+  i: number;
+  j: number;
+};
+
+export type LISStep = {
+  array: number[];
+  dp: number[];
+  current: number;
+  comparing: number | null;
+};
+
+export type CoinChangeStep = {
+  coins: number[];
+  table: (number | null)[];
+  current: number;
+  usingCoin: number | null;
+};
