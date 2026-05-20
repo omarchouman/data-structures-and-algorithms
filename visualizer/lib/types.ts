@@ -87,6 +87,109 @@ export type CoinChangeStep = {
   usingCoin: number | null;
 };
 
+export type LinkedListStep = {
+  nodes: { id: number; value: string }[];
+  action: "prepend" | "append" | "delete" | "search" | "idle";
+  highlight: number | null;
+};
+
+export type DynamicArrayStep = {
+  items: (string | null)[];
+  capacity: number;
+  size: number;
+  action: "append" | "resize" | "idle";
+  highlight: number | null;
+};
+
+export type DequeStep = {
+  items: string[];
+  action: "pushFront" | "pushRear" | "popFront" | "popRear" | "idle";
+  frontHighlight: boolean;
+  rearHighlight: boolean;
+};
+
+export type HashTableStep = {
+  buckets: string[][];
+  action: "put" | "get" | "delete" | "idle";
+  activeBucket: number | null;
+  activeItem: number | null;
+  activeKey: string | null;
+};
+
+export type TreeNode = {
+  id: number;
+  value: number;
+  left: number | null;
+  right: number | null;
+  x: number;
+  y: number;
+};
+
+export type BSTStep = {
+  nodes: TreeNode[];
+  action: "insert" | "search" | "idle";
+  highlight: number | null;
+  path: number[];
+};
+
+export type AVLTreeNode = {
+  id: number;
+  value: number;
+  left: number | null;
+  right: number | null;
+  height: number;
+  x: number;
+  y: number;
+};
+
+export type AVLStep = {
+  nodes: AVLTreeNode[];
+  action: "insert" | "rotate" | "idle";
+  highlight: number | null;
+  label: string;
+};
+
+export type HeapStep = {
+  array: number[];
+  action: "insert" | "extract" | "heapify" | "idle";
+  highlight: number | null;
+  comparing: [number, number] | null;
+  sorted: number[];
+};
+
+export type TrieNodeData = {
+  id: number;
+  char: string;
+  isEnd: boolean;
+  children: number[];
+  x: number;
+  y: number;
+};
+
+export type TrieStep = {
+  nodes: TrieNodeData[];
+  action: "insert" | "search" | "idle";
+  path: number[];
+  label: string;
+};
+
+export type UnionFindStep = {
+  parent: number[];
+  rank: number[];
+  action: "union" | "find" | "idle";
+  highlight: number[];
+  label: string;
+};
+
+export type SegmentTreeStep = {
+  array: number[];
+  tree: number[];
+  action: "build" | "query" | "update" | "idle";
+  highlight: number[];
+  queryRange: [number, number] | null;
+  label: string;
+};
+
 export type KMPStep = {
   text: string;
   pattern: string;
