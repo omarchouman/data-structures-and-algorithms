@@ -33,3 +33,21 @@ export type SearchStep = {
   found: number | null;
   eliminated: number[];
 };
+
+export type WeightedGraphStep = {
+  visited: string[];
+  current: string | null;
+  distances: Record<string, number>;
+  mstEdges: [string, string][];
+  relaxedEdge: [string, string] | null;
+  consideredEdge: [string, string] | null;
+};
+
+export type FloydWarshallStep = {
+  dist: number[][];
+  nodes: string[];
+  k: number;
+  i: number;
+  j: number;
+  updated: boolean;
+};
