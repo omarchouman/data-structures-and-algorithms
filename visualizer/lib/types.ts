@@ -86,3 +86,22 @@ export type CoinChangeStep = {
   current: number;
   usingCoin: number | null;
 };
+
+export type KMPStep = {
+  text: string;
+  pattern: string;
+  textIndex: number;
+  patternIndex: number;
+  matches: number[];
+  lps: number[];
+  phase: "build-lps" | "search";
+};
+
+export type RabinKarpStep = {
+  text: string;
+  pattern: string;
+  windowStart: number;
+  matches: number[];
+  isHashMatch: boolean;
+  isVerified: boolean;
+};
