@@ -4,7 +4,7 @@ import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: HeapStep; }
 
-function treeX(i: number, total: number): number {
+function treeX(i: number): number {
   const depth = Math.floor(Math.log2(i + 1));
   const posInLevel = i - (Math.pow(2, depth) - 1);
   const levelWidth = Math.pow(2, depth);
@@ -19,7 +19,7 @@ export function HeapVisualizer({ step }: Props) {
   const { array, highlight, comparing, sorted, action } = step;
 
   const getArrayColor = (i: number) => {
-    if (comparing && comparing.includes(i as 0 | 1)) return "bg-yellow-400 border-yellow-500 text-slate-900";
+    if (comparing && (comparing as number[]).includes(i)) return "bg-yellow-400 border-yellow-500 text-slate-900";
     if (i === highlight) {
       if (action === "insert") return "bg-green-400 border-green-500 text-white";
       if (action === "extract") return "bg-red-400 border-red-500 text-white";
@@ -29,7 +29,7 @@ export function HeapVisualizer({ step }: Props) {
   };
 
   const getCircleColor = (i: number) => {
-    if (comparing && comparing.includes(i as 0 | 1)) return { fill: "#facc15", stroke: "#ca8a04", text: "#1e293b" };
+    if (comparing && (comparing as number[]).includes(i)) return { fill: "#facc15", stroke: "#ca8a04", text: "#1e293b" };
     if (i === highlight) {
       if (action === "insert") return { fill: "#4ade80", stroke: "#16a34a", text: "#fff" };
       if (action === "extract") return { fill: "#f87171", stroke: "#dc2626", text: "#fff" };
@@ -50,7 +50,7 @@ export function HeapVisualizer({ step }: Props) {
               <line
                 key={`e${i}`}
                 x1={treeX(parent, array.length)} y1={treeY(parent)}
-                x2={treeX(i, array.length)} y2={treeY(i)}
+                x2={treeX(i)} y2={treeY(i)}
                 stroke={EDGE_STROKE} strokeWidth={2}
               />
             );
@@ -59,8 +59,8 @@ export function HeapVisualizer({ step }: Props) {
             const { fill, stroke, text } = getCircleColor(i);
             return (
               <g key={i}>
-                <circle cx={treeX(i, array.length)} cy={treeY(i)} r={20} fill={fill} stroke={stroke} strokeWidth={2} className="transition-all duration-200" />
-                <text x={treeX(i, array.length)} y={treeY(i)} textAnchor="middle" dominantBaseline="central" fontSize={13} fontWeight={600} fill={text}>
+                <circle cx={treeX(i)} cy={treeY(i)} r={20} fill={fill} stroke={stroke} strokeWidth={2} className="transition-all duration-200" />
+                <text x={treeX(i)} y={treeY(i)} textAnchor="middle" dominantBaseline="central" fontSize={13} fontWeight={600} fill={text}>
                   {val}
                 </text>
               </g>
