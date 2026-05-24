@@ -49,7 +49,7 @@ export function HeapVisualizer({ step }: Props) {
             return (
               <line
                 key={`e${i}`}
-                x1={treeX(parent, array.length)} y1={treeY(parent)}
+                x1={treeX(parent)} y1={treeY(parent)}
                 x2={treeX(i)} y2={treeY(i)}
                 stroke={EDGE_STROKE} strokeWidth={2}
               />

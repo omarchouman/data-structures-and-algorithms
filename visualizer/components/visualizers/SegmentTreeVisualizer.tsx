@@ -56,10 +56,10 @@ export function SegmentTreeVisualizer({ step }: Props) {
           const left = 2 * i, right = 2 * i + 1;
           return [
             tree[left] !== undefined && visibleSet.has(left) ? (
-              <line key={`l${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(left, 0)} y2={nodeY(left)} stroke={EDGE_STROKE} strokeWidth={2} />
+              <line key={`l${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(left)} y2={nodeY(left)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
             tree[right] !== undefined && visibleSet.has(right) ? (
-              <line key={`r${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(right, 0)} y2={nodeY(right)} stroke={EDGE_STROKE} strokeWidth={2} />
+              <line key={`r${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(right)} y2={nodeY(right)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
           ];
         })}
