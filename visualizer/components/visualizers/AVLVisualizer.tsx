@@ -1,6 +1,7 @@
 "use client";
-import { AVLStep, AVLTreeNode } from "@/lib/types";
-import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
+import { AVLStep } from "@/lib/types";
+import { DEFAULT_NODE_COLOR } from "@/lib/treeColors";
+import { TreeSVG } from "./TreeSVG";
 
 interface Props { step: AVLStep; }
 
@@ -22,43 +23,18 @@ export function AVLVisualizer({ step }: Props) {
       </div>
     );
   }
-
-  const nodeMap = new Map<number, AVLTreeNode>(nodes.map(n => [n.id, n]));
-
   return (
     <div className="flex flex-col items-center gap-3">
-      <svg width="500" height="340" className="overflow-visible">
-        {nodes.map(node => {
-          const drawEdge = (childId: number | null) => {
-            if (childId === null) return null;
-            const child = nodeMap.get(childId);
-            if (!child) return null;
-            return (
-              <line
-                key={`${node.id}-${childId}`}
-                x1={node.x} y1={node.y}
-                x2={child.x} y2={child.y}
-                stroke={EDGE_STROKE} strokeWidth={2}
-              />
-            );
-          };
-          return [drawEdge(node.left), drawEdge(node.right)];
-        })}
-        {nodes.map(node => {
-          const { fill, stroke, text } = getNodeColor(node.id, highlight, action);
-          return (
-            <g key={node.id}>
-              <circle cx={node.x} cy={node.y} r={20} fill={fill} stroke={stroke} strokeWidth={2} className="transition-all duration-200" />
-              <text x={node.x} y={node.y} textAnchor="middle" dominantBaseline="central" fontSize={13} fontWeight={600} fill={text}>
-                {node.value}
-              </text>
-              <text x={node.x} y={node.y - 28} textAnchor="middle" fontSize={9} fill="#94a3b8">
-                h={node.height}
-              </text>
-            </g>
-          );
-        })}
-      </svg>
+      <TreeSVG
+        nodes={nodes}
+        getColor={(id) => getNodeColor(id, highlight, action)}
+        nodeText={(n) => n.value}
+        nodeExtra={(n) => (
+          <text x={n.x} y={n.y - 28} textAnchor="middle" fontSize={9} fill="#94a3b8">
+            h={n.height}
+          </text>
+        )}
+      />
       <p className="text-sm text-slate-500 h-5 text-center">{label}</p>
     </div>
   );
