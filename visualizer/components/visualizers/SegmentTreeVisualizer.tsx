@@ -5,7 +5,7 @@ import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 interface Props { step: SegmentTreeStep; }
 
 function nodeDepth(i: number) { return Math.floor(Math.log2(i)); }
-function nodeX(i: number, totalDepth: number) {
+function nodeX(i: number) {
   const depth = nodeDepth(i);
   const posInLevel = i - Math.pow(2, depth);
   const levelWidth = Math.pow(2, depth);
@@ -15,7 +15,6 @@ function nodeY(i: number) { return 30 + nodeDepth(i) * 60; }
 
 export function SegmentTreeVisualizer({ step }: Props) {
   const { array, tree, highlight, queryRange, action, label } = step;
-  const n = array.length;
 
   // Only show filled nodes (index 1..2n-1 for a 1-indexed tree)
   const maxNode = tree.reduce((max, val, i) => val !== 0 ? i : max, 0);
@@ -23,6 +22,7 @@ export function SegmentTreeVisualizer({ step }: Props) {
   for (let i = 1; i <= maxNode; i++) {
     if (tree[i] !== undefined) visibleNodes.push(i);
   }
+  const visibleSet = new Set(visibleNodes);
 
   const getColor = (i: number) => {
     if (highlight.includes(i)) {
@@ -55,11 +55,11 @@ export function SegmentTreeVisualizer({ step }: Props) {
         {visibleNodes.map(i => {
           const left = 2 * i, right = 2 * i + 1;
           return [
-            tree[left] !== undefined && visibleNodes.includes(left) ? (
-              <line key={`l${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(left, 0)} y2={nodeY(left)} stroke={EDGE_STROKE} strokeWidth={2} />
+            tree[left] !== undefined && visibleSet.has(left) ? (
+              <line key={`l${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(left, 0)} y2={nodeY(left)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
-            tree[right] !== undefined && visibleNodes.includes(right) ? (
-              <line key={`r${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(right, 0)} y2={nodeY(right)} stroke={EDGE_STROKE} strokeWidth={2} />
+            tree[right] !== undefined && visibleSet.has(right) ? (
+              <line key={`r${i}`} x1={nodeX(i)} y1={nodeY(i)} x2={nodeX(right, 0)} y2={nodeY(right)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
           ];
         })}
@@ -67,8 +67,8 @@ export function SegmentTreeVisualizer({ step }: Props) {
           const { fill, stroke, text } = getColor(i);
           return (
             <g key={i}>
-              <circle cx={nodeX(i, 0)} cy={nodeY(i)} r={20} fill={fill} stroke={stroke} strokeWidth={2} className="transition-all duration-200" />
-              <text x={nodeX(i, 0)} y={nodeY(i)} textAnchor="middle" dominantBaseline="central" fontSize={12} fontWeight={600} fill={text}>
+              <circle cx={nodeX(i)} cy={nodeY(i)} r={20} fill={fill} stroke={stroke} strokeWidth={2} className="transition-all duration-200" />
+              <text x={nodeX(i)} y={nodeY(i)} textAnchor="middle" dominantBaseline="central" fontSize={12} fontWeight={600} fill={text}>
                 {tree[i]}
               </text>
             </g>
