@@ -1,5 +1,6 @@
 "use client";
 import { SegmentTreeStep } from "@/lib/types";
+import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: SegmentTreeStep; }
 
@@ -29,7 +30,7 @@ export function SegmentTreeVisualizer({ step }: Props) {
       if (action === "update") return { fill: "#f97316", stroke: "#ea580c", text: "#fff" };
       if (action === "build") return { fill: "#4ade80", stroke: "#16a34a", text: "#fff" };
     }
-    return { fill: "#e2e8f0", stroke: "#94a3b8", text: "#475569" };
+    return DEFAULT_NODE_COLOR;
   };
 
   return (
@@ -55,10 +56,10 @@ export function SegmentTreeVisualizer({ step }: Props) {
           const left = 2 * i, right = 2 * i + 1;
           return [
             tree[left] !== undefined && visibleNodes.includes(left) ? (
-              <line key={`l${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(left, 0)} y2={nodeY(left)} stroke="#cbd5e1" strokeWidth={2} />
+              <line key={`l${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(left, 0)} y2={nodeY(left)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
             tree[right] !== undefined && visibleNodes.includes(right) ? (
-              <line key={`r${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(right, 0)} y2={nodeY(right)} stroke="#cbd5e1" strokeWidth={2} />
+              <line key={`r${i}`} x1={nodeX(i, 0)} y1={nodeY(i)} x2={nodeX(right, 0)} y2={nodeY(right)} stroke={EDGE_STROKE} strokeWidth={2} />
             ) : null,
           ];
         })}

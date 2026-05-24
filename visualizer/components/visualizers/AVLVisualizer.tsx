@@ -1,5 +1,6 @@
 "use client";
 import { AVLStep, AVLTreeNode } from "@/lib/types";
+import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: AVLStep; }
 
@@ -8,7 +9,7 @@ function getNodeColor(id: number, highlight: number | null, action: AVLStep["act
     if (action === "insert") return { fill: "#4ade80", stroke: "#16a34a", text: "#fff" };
     if (action === "rotate") return { fill: "#f97316", stroke: "#ea580c", text: "#fff" };
   }
-  return { fill: "#e2e8f0", stroke: "#94a3b8", text: "#475569" };
+  return DEFAULT_NODE_COLOR;
 }
 
 export function AVLVisualizer({ step }: Props) {
@@ -37,7 +38,7 @@ export function AVLVisualizer({ step }: Props) {
                 key={`${node.id}-${childId}`}
                 x1={node.x} y1={node.y}
                 x2={child.x} y2={child.y}
-                stroke="#cbd5e1" strokeWidth={2}
+                stroke={EDGE_STROKE} strokeWidth={2}
               />
             );
           };

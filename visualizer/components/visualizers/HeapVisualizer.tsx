@@ -1,5 +1,6 @@
 "use client";
 import { HeapStep } from "@/lib/types";
+import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: HeapStep; }
 
@@ -34,7 +35,7 @@ export function HeapVisualizer({ step }: Props) {
       if (action === "extract") return { fill: "#f87171", stroke: "#dc2626", text: "#fff" };
       if (action === "heapify") return { fill: "#60a5fa", stroke: "#2563eb", text: "#fff" };
     }
-    return { fill: "#e2e8f0", stroke: "#94a3b8", text: "#475569" };
+    return DEFAULT_NODE_COLOR;
   };
 
   return (
@@ -50,7 +51,7 @@ export function HeapVisualizer({ step }: Props) {
                 key={`e${i}`}
                 x1={treeX(parent, array.length)} y1={treeY(parent)}
                 x2={treeX(i, array.length)} y2={treeY(i)}
-                stroke="#cbd5e1" strokeWidth={2}
+                stroke={EDGE_STROKE} strokeWidth={2}
               />
             );
           })}

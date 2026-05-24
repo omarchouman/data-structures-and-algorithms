@@ -1,5 +1,6 @@
 "use client";
 import { TrieStep, TrieNodeData } from "@/lib/types";
+import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: TrieStep; }
 
@@ -23,7 +24,7 @@ export function TrieVisualizer({ step }: Props) {
     }
     const node = nodeMap.get(id)!;
     if (node.isEnd) return { fill: "#a78bfa", stroke: "#7c3aed", text: "#fff" };
-    return { fill: "#e2e8f0", stroke: "#94a3b8", text: "#475569" };
+    return DEFAULT_NODE_COLOR;
   };
 
   const maxY = Math.max(...nodes.map(n => n.y), 30);
@@ -40,7 +41,7 @@ export function TrieVisualizer({ step }: Props) {
                 key={`${node.id}-${childId}`}
                 x1={node.x} y1={node.y}
                 x2={child.x} y2={child.y}
-                stroke="#cbd5e1" strokeWidth={2}
+                stroke={EDGE_STROKE} strokeWidth={2}
               />
             );
           })

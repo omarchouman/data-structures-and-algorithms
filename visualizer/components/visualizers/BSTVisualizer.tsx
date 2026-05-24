@@ -1,5 +1,6 @@
 "use client";
 import { BSTStep, TreeNode } from "@/lib/types";
+import { DEFAULT_NODE_COLOR, EDGE_STROKE } from "@/lib/treeColors";
 
 interface Props { step: BSTStep; }
 
@@ -9,7 +10,7 @@ function getNodeColor(id: number, highlight: number | null, path: number[], acti
     if (action === "search") return { fill: "#facc15", stroke: "#ca8a04", text: "#1e293b" };
   }
   if (path.includes(id)) return { fill: "#93c5fd", stroke: "#3b82f6", text: "#1e293b" };
-  return { fill: "#e2e8f0", stroke: "#94a3b8", text: "#475569" };
+  return DEFAULT_NODE_COLOR;
 }
 
 export function BSTVisualizer({ step }: Props) {
@@ -32,7 +33,7 @@ export function BSTVisualizer({ step }: Props) {
               key={`${node.id}-${childId}`}
               x1={node.x} y1={node.y}
               x2={child.x} y2={child.y}
-              stroke="#cbd5e1" strokeWidth={2}
+              stroke={EDGE_STROKE} strokeWidth={2}
             />
           );
         };
