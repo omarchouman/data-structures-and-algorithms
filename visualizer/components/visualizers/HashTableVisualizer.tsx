@@ -7,11 +7,11 @@ export function HashTableVisualizer({ step }: Props) {
   const { buckets, action, activeBucket, activeItem, activeKey } = step;
 
   const getBucketColor = (i: number) => {
-    if (i !== activeBucket) return "";
+    if (i !== activeBucket) return "border-slate-300";
     if (action === "put") return "border-green-500";
     if (action === "delete") return "border-red-500";
     if (action === "get") return "border-yellow-500";
-    return "";
+    return "border-slate-300";
   };
 
   const getItemColor = (bucketIdx: number, itemIdx: number) => {
@@ -32,7 +32,7 @@ export function HashTableVisualizer({ step }: Props) {
       )}
       <div className="w-full flex flex-col gap-1">
         {buckets.map((bucket, i) => (
-          <div key={i} className={`flex items-center gap-2 border-l-4 pl-2 transition-all duration-200 ${getBucketColor(i)} border-slate-300`}>
+          <div key={i} className={`flex items-center gap-2 border-l-4 pl-2 transition-all duration-200 ${getBucketColor(i)}`}>
             <span className="text-xs text-slate-400 w-5 text-right shrink-0">{i}</span>
             <div className="flex gap-1 flex-wrap">
               {bucket.length === 0
