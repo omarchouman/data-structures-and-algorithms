@@ -8,9 +8,10 @@ interface Props {
 export function SortingVisualizer({ step }: Props) {
   const { array, comparing, swapped, sorted } = step;
   const max = Math.max(...array);
+  const sortedSet = new Set(sorted);
 
   const getColor = (i: number): string => {
-    if (sorted.includes(i)) return "bg-green-500";
+    if (sortedSet.has(i)) return "bg-green-500";
     if (swapped && (swapped[0] === i || swapped[1] === i)) return "bg-red-500";
     if (comparing && (comparing[0] === i || comparing[1] === i)) return "bg-yellow-400";
     return "bg-slate-400";
