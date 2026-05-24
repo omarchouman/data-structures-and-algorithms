@@ -7,13 +7,14 @@ interface Props {
 
 export function SearchVisualizer({ step }: Props) {
   const { array, target, current, low, high, mid, found, eliminated } = step;
+  const eliminatedSet = new Set(eliminated);
 
   const getStyle = (i: number): string => {
     if (found === i) return "bg-green-500 border-green-600 text-white scale-110";
-    if (found === -1 && eliminated.includes(i)) return "bg-slate-100 border-slate-200 text-slate-300";
+    if (found === -1 && eliminatedSet.has(i)) return "bg-slate-100 border-slate-200 text-slate-300";
     if (current === i) return "bg-yellow-400 border-yellow-500 text-slate-900";
     if (mid === i) return "bg-orange-400 border-orange-500 text-white";
-    if (eliminated.includes(i)) return "bg-slate-100 border-slate-200 text-slate-300";
+    if (eliminatedSet.has(i)) return "bg-slate-100 border-slate-200 text-slate-300";
     if (low !== null && high !== null && i >= low && i <= high) return "bg-blue-100 border-blue-400 text-slate-900";
     return "bg-slate-200 border-slate-300 text-slate-700";
   };
